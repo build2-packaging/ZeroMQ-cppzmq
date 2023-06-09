@@ -1,0 +1,12 @@
+import libs = libcppzmq%lib{cppzmq}
+
+src = cxx{*}
+
+for example: $src
+{
+    exe{$name($example)}: $example $libs
+    ./: exe{$name($example)}
+}
+
+exe{hello_world}: test = true
+exe{multipart_messages}: test = true

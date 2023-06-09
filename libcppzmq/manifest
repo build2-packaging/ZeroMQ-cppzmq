@@ -1,14 +1,18 @@
 : 1
 name: libcppzmq
-version: 0.1.0-a.0.z
+version: 4.9.0-a.0.z
 language: c++
-project: cppzmq
-summary: cppzmq C++ library
-license: other: proprietary ; Not free/open source.
+project: ZeroMQ
+summary: Header-only C++ binding for libzmq
+license: other: MIT ; MIT License.
 description-file: README.md
-url: https://example.org/cppzmq
-email: rookfighter@posteo.org
-#build-error-email: rookfighter@posteo.org
-depends: * build2 >= 0.15.0
-depends: * bpkg >= 0.15.0
-#depends: libhello ^1.0.0
+topics: C++
+url: https://zeromq.org/
+src-url: https://github.com/zeromq/cppzmq
+doc-url: https://brettviren.github.io/cppzmq-tour/index.html
+package-url: https://github.com/build2-packaging/cppzmq
+package-email: packaging@build2.org ; Mailing list.
+
+depends: * build2 >= 0.16.0-
+depends: * bpkg >= 0.16.0-
+depends: libzmq ^4.0.0

@@ -1,6 +1,6 @@
 $out_root/
 {
-  include src/libcppzmq/
+  include include/
 }
 
-export $out_root/src/libcppzmq/$import.target
+export $out_root/include/$import.target

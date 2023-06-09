@@ -1,3 +1,1 @@
-# libcppzmq
-
-C++ library
+../upstream/README.md

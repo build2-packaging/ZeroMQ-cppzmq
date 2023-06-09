@@ -1,0 +1,6 @@
+: 1
+summary: cppzmq project repository
+
+:
+role: prerequisite
+location: https://github.com/build2-packaging/libzmq.git#master
