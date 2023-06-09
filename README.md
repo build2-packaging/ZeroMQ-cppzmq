@@ -1,6 +1,6 @@
 # cppzmq Build2 Package
 
-[![build2](https://github.com/build2-packaging/cppzmq/actions/workflows/build2.yml/badge.svg)](https://github.com/build2-packaging/cppzmq/actions/workflows/build2.yml)
+[![build2](https://github.com/build2-packaging/ZeroMQ-cppzmq/actions/workflows/build2.yml/badge.svg)](https://github.com/build2-packaging/ZeroMQ-cppzmq/actions/workflows/build2.yml)
 
 This project builds and defines the build2 package for the [cppzmq](https://github.com/zeromq/cppzmq) library.
 

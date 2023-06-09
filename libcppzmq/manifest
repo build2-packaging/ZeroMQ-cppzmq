@@ -10,7 +10,7 @@ topics: C++
 url: https://zeromq.org/
 src-url: https://github.com/zeromq/cppzmq
 doc-url: https://brettviren.github.io/cppzmq-tour/index.html
-package-url: https://github.com/build2-packaging/cppzmq
+package-url: https://github.com/build2-packaging/ZeroMQ-cppzmq
 package-email: packaging@build2.org ; Mailing list.
 
 depends: * build2 >= 0.16.0-
