@@ -1,0 +1,12 @@
+import impl_libs = catch2%lib{catch2}
+import impl_libs += libcppzmq%lib{cppzmq}
+
+exe{unit_tests}: {hxx cxx}{*} $impl_libs
+
+out_pfx_src = [dir_path] $out_root/src/
+src_pfx_src = [dir_path] $src_root/src/
+
+cxx.poptions += "-I$out_pfx_src" "-I$src_pfx_src"
+
+# Don't install private headers.
+{hxx ixx}{*}: install = false

@@ -1,9 +1,9 @@
 : 1
-name: libcppzmq
+name: libcppzmq-tests
 version: 4.9.0-a.0.z
 language: c++
 project: ZeroMQ
-summary: Header-only C++ binding for libzmq
+summary: Test package for libcppzmq
 license: other: MIT ; MIT License.
 description-file: README.md
 topics: C++
@@ -16,5 +16,6 @@ package-email: packaging@build2.org ; Mailing list.
 depends: * build2 >= 0.16.0-
 depends: * bpkg >= 0.16.0-
 depends: libzmq ^4.0.0
+depends: catch2 ^2.0.0
 
 tests: libcppzmq-tests == $
