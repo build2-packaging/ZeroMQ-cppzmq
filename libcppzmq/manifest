@@ -1,0 +1,14 @@
+: 1
+name: libcppzmq
+version: 0.1.0-a.0.z
+language: c++
+project: cppzmq
+summary: cppzmq C++ library
+license: other: proprietary ; Not free/open source.
+description-file: README.md
+url: https://example.org/cppzmq
+email: rookfighter@posteo.org
+#build-error-email: rookfighter@posteo.org
+depends: * build2 >= 0.15.0
+depends: * bpkg >= 0.15.0
+#depends: libhello ^1.0.0

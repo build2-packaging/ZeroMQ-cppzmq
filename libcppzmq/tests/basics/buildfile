@@ -1,0 +1,3 @@
+import libs = libcppzmq%lib{cppzmq}
+
+exe{driver}: {hxx ixx txx cxx}{**} $libs testscript{**}
