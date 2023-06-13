@@ -35,7 +35,7 @@ jobs:
           submodules: true
       - uses: build2/setup-build2-github-action@v2
         with:
-          build2-version: latest
+          build2-version: staged
       - name: Configure
         run: bdep init -C @cc cc config.config.load=build-config/${{matrix.config.config_file}}
       - name: Build
@@ -63,7 +63,7 @@ jobs:
         submodules: true
     - uses: build2/setup-build2-github-action@v2
       with:
-        build2-version: latest
+        build2-version: staged
     - name: Configure
       run: bdep init -C @cc cc config.config.load=build-config/${{matrix.config.config_file}}
     - name: Build
@@ -92,7 +92,7 @@ jobs:
         submodules: true
     - uses: build2/setup-build2-github-action@v2
       with:
-        build2-version: latest
+        build2-version: staged
         build2-windows-compiler: ${{matrix.config.compiler_type}}
     - name: Configure
       run: bdep init -C ../cppzmq-cc @cc cc config.config.load=build-config/${{matrix.config.config_file}}
