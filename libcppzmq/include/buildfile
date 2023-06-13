@@ -1,7 +1,4 @@
-intf_libs = # Interface dependencies.
-impl_libs = # Implementation dependencies.
-
-import intf_libs += libzmq%lib{zmq}
+import intf_libs = libzmq%lib{zmq}
 
 lib{cppzmq}: hxx{*} $intf_libs
 

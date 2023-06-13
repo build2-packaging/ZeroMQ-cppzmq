@@ -1,7 +1,7 @@
-import impl_libs = catch2%lib{catch2}
-import impl_libs += libcppzmq%lib{cppzmq}
+import libs = catch2%lib{catch2}
+import libs += libcppzmq%lib{cppzmq}
 
-exe{unit_tests}: {hxx cxx}{*} $impl_libs
+exe{unit_tests}: {hxx cxx}{*} $libs
 
 out_pfx_src = [dir_path] $out_root/src/
 src_pfx_src = [dir_path] $src_root/src/
