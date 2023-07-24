@@ -2,13 +2,9 @@ import intf_libs = libzmq%lib{zmq}
 
 lib{cppzmq}: hxx{*} $intf_libs
 
-# Build options.
-out_pfx_inc = [dir_path] $out_root/include/
-src_pfx_inc = [dir_path] $src_root/include/
-
 # Export options.
 lib{cppzmq}:
 {
-  cxx.export.poptions = "-I$out_pfx_inc" "-I$src_pfx_inc"
+  cxx.export.poptions = "-I$out_base" "-I$src_base"
   cxx.export.libs = $intf_libs
 }
