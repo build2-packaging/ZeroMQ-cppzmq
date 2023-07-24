@@ -1,0 +1,7 @@
+: 1
+name: libcppzmq-tests
+version: 4.9.0
+language: c++
+project: ZeroMQ
+summary: Test package for libcppzmq
+license: other: MIT; MIT License.
